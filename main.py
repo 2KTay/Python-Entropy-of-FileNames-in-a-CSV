@@ -4,15 +4,6 @@ Python Entropy of FileNames in a CSV
 to look through CSV, extract the filepaths, calculate the entropy score
 using Shannon entropy, display top 10 and bottom 10
 
-change filename on line 56 if necessary
-
-this works for and for run once
-Run Keys:Type,Run Keys:Name,Run Keys:Command Line, Count
-with 5 lines csv
-
-
-but has a issue with bigfile.csv with 100 lines as it is not calcuating properly
-
 
 Author: Taemoor Hasan
 '''
@@ -53,19 +44,13 @@ def shannon_entropy(s):
 # Function to extract exe name or  file path
 def extract_exe(command_line):
 
-    # Use regex to find the .exe file in the command line
-    #matehches everything after the last slash that ends with .exe
-    #+).exe
-    #use the dollar sign at the end
-    #(),exe,pipe,ps1,cmd, extensions
-    #learn regex 101
+
 
     #NOTE: some programs do not end with .exe
     match = re.search(r'\\([^\\]+\.exe)', command_line)
     if match:
         return match.group(0)
     return ""
-
 
 
 #change file name if necessary
