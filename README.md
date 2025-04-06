@@ -2,6 +2,8 @@
 
 # Overview
 
+Current Work in Progress, not allowed to show what type of data due to related to senstive infomation. 
+
 This Python script analyzes a CSV file containing system execution logs, extracts file paths, and calculates entropy scores using Shannon entropy. The script is designed to help identify anomalous or suspicious executable file names by sorting and displaying the top 10 highest and lowest entropy values.
 
 As part of the Elevance Health - The Data Mine initiative, this script plays a crucial role in cybersecurity anomaly detection by analyzing entropy variations in executable paths. Identifying high-entropy file names can help detect potential security threats, unauthorized processes, or malicious software execution patterns.
